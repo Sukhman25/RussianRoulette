@@ -33,11 +33,11 @@ namespace RussianRoulette
 
         public void ShootAtHead()
         {
-
+           
            if (Bullet == 5)
             {
-               
-                    MessageBox.Show("You Are Dead And You Lost the game");
+                die = true;
+                MessageBox.Show("You Are Dead And You Lost the game");
                     Point = Point - 10; // Game Points will be deducted whenever person will die
                 }
 
@@ -62,6 +62,7 @@ namespace RussianRoulette
             {
                 if (ShootAwayChances == 1)
                 {
+                    die = true;
                     MessageBox.Show("You lost all the chances and you will definitely die");
                     Point = Point - 5;
                 }

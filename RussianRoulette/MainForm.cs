@@ -38,7 +38,7 @@ namespace RussianRoulette
         private void LoadBtn_Click(object sender, EventArgs e)
         {
             Logic.Load();
-            SoundPlayer player = new SoundPlayer(Resource1.Gunload);
+            SoundPlayer player = new SoundPlayer(Resource1.Gunload);// playing sound when gun will be loaded
             player.Play();
 
             Logic.Bullet = 0;
@@ -97,6 +97,14 @@ namespace RussianRoulette
                     EXIT.Enabled = true;
                
            
+            }
+            else
+            {
+                ShootheadBtn.Enabled = true;
+                ShootawayBtn.Enabled = true;
+
+                EXIT.Enabled = true;
+
             }
 
         }
