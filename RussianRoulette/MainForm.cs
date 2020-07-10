@@ -120,7 +120,14 @@ namespace RussianRoulette
             { }
         }
 
-       
+        private void PlayAgainbtn_Click_1(object sender, EventArgs e)
+        {
+            (new MainForm()).Show();
+            this.Hide();
+            EXIT.Enabled = true;
+
+
+        }
     }
       
     }

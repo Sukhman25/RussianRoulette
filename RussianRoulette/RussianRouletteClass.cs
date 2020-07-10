@@ -25,11 +25,14 @@ namespace RussianRoulette
         }
 
         //spin function used to spin chambers
-        public void Spin()
+        public int Spin()
         {
             Random rand = new Random();  // Random  is used to make bullet in a random position not in a static position
             Bullet = rand.Next(0, 6);
+            return Bullet;
         }
+
+        
 
         public void ShootAtHead()
         {
@@ -68,6 +71,7 @@ namespace RussianRoulette
                 }
                 else
                 {
+                    die = false;
                     MessageBox.Show("You missed one of your chances");
                     Bullet++;
                     ShootAwayChances--;

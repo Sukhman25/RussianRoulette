@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LoadgunPicture = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.PlayAgainbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadgunPicture)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +103,7 @@
             // 
             this.ShootheadBtn.BackColor = System.Drawing.SystemColors.Info;
             this.ShootheadBtn.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShootheadBtn.Location = new System.Drawing.Point(523, 202);
+            this.ShootheadBtn.Location = new System.Drawing.Point(523, 178);
             this.ShootheadBtn.Name = "ShootheadBtn";
             this.ShootheadBtn.Size = new System.Drawing.Size(140, 51);
             this.ShootheadBtn.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             this.ShootawayBtn.BackColor = System.Drawing.SystemColors.Info;
             this.ShootawayBtn.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShootawayBtn.Location = new System.Drawing.Point(523, 279);
+            this.ShootawayBtn.Location = new System.Drawing.Point(523, 235);
             this.ShootawayBtn.Name = "ShootawayBtn";
             this.ShootawayBtn.Size = new System.Drawing.Size(140, 51);
             this.ShootawayBtn.TabIndex = 7;
@@ -155,6 +156,18 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Game Points";
             // 
+            // PlayAgainbtn
+            // 
+            this.PlayAgainbtn.BackColor = System.Drawing.SystemColors.Info;
+            this.PlayAgainbtn.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayAgainbtn.Location = new System.Drawing.Point(523, 339);
+            this.PlayAgainbtn.Name = "PlayAgainbtn";
+            this.PlayAgainbtn.Size = new System.Drawing.Size(140, 51);
+            this.PlayAgainbtn.TabIndex = 13;
+            this.PlayAgainbtn.Text = "PLAY AGAIN";
+            this.PlayAgainbtn.UseVisualStyleBackColor = false;
+            this.PlayAgainbtn.Click += new System.EventHandler(this.PlayAgainbtn_Click_1);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -162,6 +175,7 @@
             this.BackgroundImage = global::RussianRoulette.Resource1.backgroundimage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(767, 487);
+            this.Controls.Add(this.PlayAgainbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LoadgunPicture);
             this.Controls.Add(this.label1);
@@ -193,6 +207,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox LoadgunPicture;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button PlayAgainbtn;
     }
 }
 

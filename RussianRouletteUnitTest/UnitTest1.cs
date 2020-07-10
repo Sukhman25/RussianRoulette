@@ -8,40 +8,20 @@ namespace RussianRouletteUnitTest
     public class UnitTest1
     {
         RussianRouletteClass Logic = new RussianRouletteClass();
-       
-        [TestMethod]
 
+        [TestMethod]
         public void ShootAwayTest()
         {
-            
-                try
-                {
-                    Logic.ShootAway();
-                    Assert.IsTrue(true);
-                }
-                catch
-                {
-                    Assert.IsTrue(false);
-                }
 
-            
-        }
-        [TestMethod]
-        public void ShootAtHeadTest()
-        {
+            Logic.ShootAwayChances = 2;
 
-            try
-            {
-                Logic.ShootAtHead();
-                Assert.IsTrue(true);
-            }
-            catch
-            {
-                Assert.IsTrue(false);
-            }
+            int Expected = 2;
+            int Actual = Logic.ShootAwayChances();
 
+            Assert.AreEqual(Expected, Actual);
 
         }
+      
         [TestMethod]
         public void SpinTest()
         {
