@@ -16,7 +16,7 @@ namespace RussianRouletteUnitTest
             Logic.ShootAwayChances = 2;
 
             int Expected = 2;
-            int Actual = Logic.ShootAwayChances();
+            int Actual = Logic.ShootAwayChances;
 
             Assert.AreEqual(Expected, Actual);
 
